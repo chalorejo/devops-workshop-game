@@ -1,16 +1,36 @@
-# React + Vite
+# Rock Paper Scissors - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The frontend for the DevOps Workshop Game is a sleek, modern, and interactive Rock Paper Scissors application built with React and Vite. It serves as the user-facing interface for the game, featuring dynamic animations and a responsive design tailored with TailwindCSS.
 
-Currently, two official plugins are available:
+## Requirements & Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Before you begin, ensure you have the following installed:
+- **Node.js** (v20 or higher recommended)
+- **npm** (comes with Node.js)
 
-## React Compiler
+To set up the frontend locally, follow these steps:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install the required dependencies:
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+## Usage Guide
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run the application locally in development mode:
+
+1. Start the Vite development server:
+   ```bash
+   npm run dev
+   ```
+2. Open your browser and navigate to `http://localhost:5173` (or the URL provided in your terminal).
+
+To build the application for production:
+```bash
+npm run build
+```
+This will generate optimized static assets in the `dist` directory, which can be deployed to AWS S3 and CloudFront (as configured in the root AWS CDK stack).
